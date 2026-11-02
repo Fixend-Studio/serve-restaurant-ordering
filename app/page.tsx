@@ -17,7 +17,15 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#241c18]/25 lg:bg-[#241c18]/15" />
         <div className="absolute inset-x-0 top-0 flex items-center justify-between px-5 py-5 text-white">
           <p className="text-[11px] tracking-[0.28em] uppercase">Serve</p>
-          <p className="text-[11px] tracking-[0.22em] uppercase">FIXEND</p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/kitchen"
+              className="text-[11px] tracking-[0.22em] text-white/80 uppercase"
+            >
+              Kitchen
+            </Link>
+            <p className="text-[11px] tracking-[0.22em] uppercase">FIXEND</p>
+          </div>
         </div>
         <div className="absolute inset-x-0 bottom-0 px-5 pb-8 text-white lg:hidden">
           <p className="text-[11px] tracking-[0.22em] uppercase text-white/80">
@@ -70,6 +78,9 @@ export default function Home() {
           className="mt-8 inline-flex h-12 w-fit items-center rounded-full bg-foreground px-6 text-background"
         >
           Continue to the menu
+        </Link>
+        <Link href="/kitchen" className="mt-4 w-fit text-sm text-muted">
+          Kitchen display
         </Link>
       </section>
     </main>

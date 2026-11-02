@@ -9,6 +9,9 @@
   --accent: #9c4332;
   --accent-foreground: #fbf7f2;
   --sold: #9a8f84;
+  --warn: #8a5a12;
+  --warn-soft: #f4e7d2;
+  --late-soft: #f6e7e2;
   --header-offset: 6.75rem;
 }
 
@@ -21,6 +24,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-sold: var(--sold);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-late-soft: var(--late-soft);
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-fraunces);
   --font-mono: var(--font-geist-mono);
@@ -50,4 +56,9 @@ body {
 
 .menu-section {
   scroll-margin-top: var(--header-offset);
+}
+
+.kitchen-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e5d9cb transparent;
 }
